@@ -1,8 +1,8 @@
-# DB-Design-SQL
-Database Design &amp; SQL
+# C-and-CPP
+C and C++
 
-This is a collection of coursework and assignment projects that were completed in the Seneca CPD Program database design and SQL courses:
+This is a collection of coursework and assignment projects that were completed in the Seneca CPD Program C and C++ courses:
 
-- DBS201 - Database Design and SQL<br/>
-- DBS301 - Database Design II and SQL Using Oracle<br/>
+- IPC144 - Introduction To Programming Using C<br/>
+- OOP244 - Introduction to Object Oriented Programming using C++<br/>
 - ...
