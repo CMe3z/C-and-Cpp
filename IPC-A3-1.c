@@ -15,8 +15,8 @@
 \**************************************************************/
 #include <stdio.h>
 
-#define DIG_MIN 0			// Minimum individual digit value acceptable for ISBN entry
-#define DIG_MAX 9			// Maximum individual digit value acceptable for ISBN entry
+#define DIG_MIN 0		// Minimum individual digit value acceptable for ISBN entry
+#define DIG_MAX 9		// Maximum individual digit value acceptable for ISBN entry
 #define ENOUGH_CHARS 10		// Define the exact # of characters and digits that are required for a valid ISBN number
 
 void wipeInput(void);
@@ -26,8 +26,8 @@ int main(void)
 {
 	
 	char isbn[21];		// Stores the user inputted ISBN
-	int i = 0;			// Iteration counter for for loop
-	int i_max;			// Variable value to terminate the for loop
+	int i = 0;		// Iteration counter for for loop
+	int i_max;		// Variable value to terminate the for loop
 	int gcount = 0;		// Counts the number of good values (digits) found in user string isbn[]
 	int analyze;		// Stores isbn characters as digits for analysis
 	int total = 0;		// Running total of weighted ISBN digits for final calculation
@@ -36,22 +36,22 @@ int main(void)
 	
 	do 
 	{
-		getInput(&isbn[0]);									// Call getInput() function (ask user to input ISBN number)
-		if (strlen(isbn) > 20) isbn[21] = '\0';				// Limit the # of characters analysed to 20 if ISBN string entered is > 20 chars	
+		getInput(&isbn[0]);					// Call getInput() function (ask user to input ISBN number)
+		if (strlen(isbn) > 20) isbn[21] = '\0';			// Limit the # of characters analysed to 20 if ISBN string entered is > 20 chars	
 		
 		for (i = 0; (i+1) <= strlen(isbn); i++)
 		{
-			analyze = isbn[i] - '0'; 						// Convert character to integer for analysis.
+			analyze = isbn[i] - '0'; 			// Convert character to integer for analysis.
 			
 			if (analyze >= DIG_MIN && analyze <= DIG_MAX)	// If character is an integer (0 to 9), then
 				total = total + (analyze * (10-gcount++));	// find the weighted value and add to running total.
 				
-			else if (isbn[i] == 'x' || isbn[i] == 'X') 		// If character is 'x' or 'X' (implies 10) then
-				total = total + (10 * (10-gcount++));		// find the weighted value and add to running total.
+			else if (isbn[i] == 'x' || isbn[i] == 'X') 	// If character is 'x' or 'X' (implies 10) then
+				total = total + (10 * (10-gcount++));	// find the weighted value and add to running total.
 				
-			else if (isbn[i] == '-');						// If character is '-' then ignore and move along to next character.
+			else if (isbn[i] == '-');			// If character is '-' then ignore and move along to next character.
 			
-			else											// If unexpected character encountered, ask for new input.
+			else						// If unexpected character encountered, ask for new input.
 			{
 				printf("Invalid character entered, please re-enter: ");
 				getInput(&isbn[0]);
@@ -117,14 +117,14 @@ void wipeInput(void)
 \**************************************************************/
 void getInput(char *string)
 {
-	int status; 		// Used to verify if scanf() functions have received appropriate data
+	int status; 						// Used to verify if scanf() functions have received appropriate data
 	
 	status = scanf("%s", string);
 	wipeInput();
 	while (status == 0 || strlen(string) < ENOUGH_CHARS)	// Run invalid entry loop if scanf does not receive at least ENOUGH_CHARS characters
 	{	
 		printf("Invalid data entered, too few/too many digits, please re-enter: ");
-		status = scanf("%s", string);						// Allow user another attempt to enter an ISBN
+		status = scanf("%s", string);			// Allow user another attempt to enter an ISBN
 		wipeInput();
 	}
 }
