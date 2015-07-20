@@ -1,5 +1,5 @@
 /**************************************************************\
-* Name	 : MainAcc.cpp                                         *
+* Name	 : Main.cpp                                            *
 * Purpose:                                                     *
 *  Provided by Assignment. Objective is to write header files  *
 *  which will make this code fully functional.                 *
