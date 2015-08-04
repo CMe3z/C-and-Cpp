@@ -1,10 +1,10 @@
 /**************************************************************\
 *                                                              *
-* Student: Chad Medeiros - 065 937 146                         *
+* Student: Chad Medeiros                                       *
 * Name	  : Rectangle.h                                        *
 * Purpose :                                                    *
 *  Defines rectangle inherited class.                          *
-*							                                   *
+*			                                       *
 ****************************************************************
 * MODIFICATION HISTORY :                                       *
 * 2015 - 07 - 25 : Created - Chad Medeiros                     *
