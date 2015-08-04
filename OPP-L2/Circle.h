@@ -1,10 +1,10 @@
 /**************************************************************\
 *                                                              *
-* Student: Chad Medeiros - 065 937 146                         *
+* Student: Chad Medeiros                                       *
 * Name	  : Circle.h                                           *
 * Purpose :                                                    *
 *  Defines circle inherited class.                             *
-*							                                   *
+*				                               *
 ****************************************************************
 * MODIFICATION HISTORY :                                       *
 * 2015 - 07 - 25 : Created - Chad Medeiros                     *
