@@ -1,0 +1,3 @@
+The objective of this Assignment was to develop a class SpyOutput that would behave as an ostream class (i.e. cout) by sending the parameters on the right to the output stream.
+
+The class should also include additional functionality to count the number of ASCII characters that were sent out to ostream and calculate their 'Check Sum,' which is defined in this case as the arithmetic sum of all characters.
