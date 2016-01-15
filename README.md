@@ -5,4 +5,5 @@ This is a collection of coursework and assignment projects that were completed i
 
 - Introduction To Programming Using C<br/>
 - Introduction to Object Oriented Programming using C++<br/>
+- Object Oriented Programming II Using C++<br/>
 - ...
